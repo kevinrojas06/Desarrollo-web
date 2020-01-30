@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrar usuario</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>REGISTRAR AL USUARIO</h1>
+	<form action="../php/procesar_signin.php" method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input type="name" name="name" id="name" required>
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="mail" name="mail" id="mail" required>
+    </div>
+    <div>
+        <label for="contrasena">Contraseña:</label>
+        <input type="contrasena" name="contrasena" id="contrasena" required>
+
+        <input type="submit" name="registrar" value="Registrar">
+
+    </div>
+</form>
+
+</body>
+</html>

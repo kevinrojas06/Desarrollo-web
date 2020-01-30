@@ -1,0 +1,596 @@
+/*body{} podemos llamar por etiquetas */
+/*.clases{} las clases pueden haber muchas */
+/*#id{} unico por cada pagina */
+
+body{
+  margin: 0; /* siempre se debe poner para sacar lo margenes por defecto*/
+  font-family: 'Poppins', sans-serif;/* llamar estilo para mi fuente*/
+}
+
+header .contenedor{ /* agarrando el contenedor que esta dentro del header*/
+  display:flex;/* convierte los elementos en cajas flexibles para su facil manipulacion*/
+  /* siempre va dirigido al div padre*/
+  justify-content: space-between;/*justificame el contenido a los espacios*/
+}
+header ul{
+display:flex;
+}
+
+header ul li{
+  list-style: none; /* quitar los puntos*/
+  margin-right: 35px;/* separar los items de la lista*/
+}
+
+header a {
+  text-decoration: none;/* quitar la decoracion del texto , o subrayado*/
+
+}
+
+.contenedor{
+  max-width: 1280px;/*encerrar todo el contenido dentro de un espacio o contenedor*/
+  width: 90%;/*usamos el 90% del contenedor, para dar espacios al rededor */
+  margin: auto;/*margen automatico, para centrar elemntos*/
+}
+
+header {
+  background:
+  linear-gradient(rgba(240, 122, 84, 0.9),
+  rgba(240, 178, 84, 0.9)),
+  url(../imagenes/fondo.jpg);/*llamar una imagen*/
+  /* ../ es para regresar una ruta anterior*/
+  height: 100vh; /* para que la imagen ocupe el 100% de la pantalla
+  el alto de */
+  background-size: cover;/*ajusta la imagen al tamño de la pantalla*/
+}
+
+#contenedor-titulo-flex{
+  display: flex;
+  justify-content: center;/*todos los justify-content dependen del display: flex*/
+  margin: 18vh 31px;
+  width: 100%;
+}
+
+h1{
+  font-size: 60px;
+  color:#FFF;
+  text-align: center;/*alinea el texto al centro*/
+  margin: 0;/*espaciador exterior del elemento, separar el elemento de otros elementos*/
+  /*a su alrededor*/
+}
+h2{
+  font-size: 30px;
+  color:#FFF;
+  text-align: center;/*alinea el texto al centro*/
+}
+.contenedor-titulo{
+  text-align: center;
+}
+.contenedor-titulo a, #sobre-code a,
+ #blog a, #que-esperas a, #contacto input[type="submit"]
+{
+  font-size: 14px;
+  color: #fff;
+  background: #ff4d4d;
+  /*padding: 14px 24px;*/ /* espaciador interno del elemento, para hacerlo mas grande*/
+  padding-top: 14px;/*arriba*/
+  padding-right: 24px;/**/
+  padding-bottom: 14px;/**/
+  padding-left: 24px;/**/
+  display: inline-block;/*CONVIERTE ELEMENTOS LINEA EN BLOQUES PARA SU manipulacion*/
+  text-decoration: none;
+}
+
+p.logo{
+  color: #fff;
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+
+element.style {
+}
+<style>
+.cerrar {
+    color: rgb(242, 242, 242);
+    background-image: initial;
+    background-color: rgb(150, 0, 0);
+    text-decoration-color: initial;
+}
+.cerrar {
+    font-size: 16px;
+    color: #fff;
+    background: #ff4d4d;
+    padding-top: 19px;
+    padding-bottom: 4px;
+    padding-left: 42px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 40px;
+    border-color: #ff000000;
+}
+.cerrar2
+{
+  border: 0;
+  padding: 0;
+  display:inline-block;
+  text-decoration: none;
+}
+/*Seccion sobre CodeDesc*/
+
+h3{
+  text-align: center;
+  font-size: 55px;
+  font-weight: normal;
+}
+
+#sobre-code .contenedor-sobrecode{
+  display:flex;
+  justify-content:space-around;
+}
+
+#sobre-code .texto{
+  width: 42%;/* lo dejamos como 42 para trabajarlo mas facilmente con dispositvos mobiles*/
+}
+
+
+/*SECCION FUNCIONES*/
+
+.contenedor-funciones{
+  display:flex;
+  flex-wrap:wrap;/*detecta el tamaño de los parrafos y acomoda dependiendo del tamaño*/
+  justify-content:space-around;
+  color: #fff;
+  margin-bottom:100px;
+}
+
+.funcion{
+  width: 24%;
+
+  /*padding: 34px 30px 38px 30px;*/
+
+  padding-top: 34px;
+  padding-right: 30px;
+  padding-bottom: 38px;
+  padding-left: 30px;
+
+  border-radius: 10px;/*para darle un borde redondeado al elemento*/
+  position: relative;
+}
+
+.funcion h4{
+  font-size: 30px;
+  margin:0;
+}
+
+.funcion p{
+  margin-bottom:20px;/*espacio entre texto e imagenes*/
+  height: 194px;/*alto del contenedor del texto*/
+
+}
+
+.ico{
+  height: 200px;
+  width: 200px;
+  float: right;
+}
+
+.contenedor-funciones .azul{
+background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.contenedor-funciones .verde{
+background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.contenedor-funciones .rojo{
+background: linear-gradient(to bottom, #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.ondas{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 352px;
+  width: 352px;
+}
+
+
+/*SECCION MIS TIENDAS*/
+button.owl-next {
+    font-size: 40px !important;
+}
+button.owl-prev {
+    font-size: 40px !important;
+}
+span {
+    color: #f19165;
+}
+
+.item{
+  height: 200px;
+  width: 200px;
+}
+
+
+/*SECCION DE POR QUE USAR*/
+#por-que-usar{
+    margin-top: 150px;
+}
+
+.ico2{
+  height: 80px;
+  width: 80px;
+}
+
+.contenedor-usar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#por-que-usar .item2{
+  width: 28%;
+  text-align: center;
+}
+
+#por-que-usar ul li {
+  list-style:none;
+}
+
+#por-que-usar ul li:nth-child(2)/*llamo al elemento hijo no.2 de ul*/
+{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#por-que-usar ul li:nth-child(3)
+{
+  line-height: 31px;/*dar interlineado a los parrafos*/
+}
+
+/*SECCION DE BLOG*/
+#blog{
+  background: #F9FAFC;
+  margin-top: 150px;
+}
+
+#blog .contenedor-publicaciones
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+#blog .publicacion
+{
+  width: 30%;
+  box-shadow: 1px 1px 14px #ccc;
+}
+
+#blog img
+{
+  width: 100%;
+}
+
+#blog .contenido
+{
+  background: #fff;
+  padding: 20px;
+}
+#blog h4
+{
+  font-size: 23px;
+  margin-bottom: 15px;
+  margin: 0px;
+}
+
+#blog p
+{
+  color: #5A6169;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+/*SECCION QUE ESPERAS*/
+
+#que-esperas{
+background: linear-gradient(to bottom, #ff7f04 0%,#ff7c00 41%,#ff7c00 41%,#ffa73d 69%,#ffb76b 100%);
+text-align: center;
+padding: 50px 0;
+margin-top: 40px;
+}
+
+#que-esperas h3{
+  font-size: 23px;
+  color: #fff;
+}
+
+/*SECCION CONTACTO*/
+
+#contacto form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  width: 77%;
+  margin: auto;/*cuando otorgamos un width fijo*/
+  /*para centrar es necesario colocar un margin: auto; */
+}
+
+input[type="text"], input[type="email"]{
+width: 49%;
+margin-bottom: 15px;
+padding: 18px 0;
+border: 0;/*retira los bordes al colocarse 0*/
+border-bottom: 1px solid #ff471a;
+font-size: 17px;
+}
+
+textarea{
+  padding: 18px 0;
+  border:0;
+  border-bottom: 1px solid #ff471a;
+  font-size: 17px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#contacto input[type="submit"]{
+  border: 0;
+  margin:auto;
+}
+
+
+
+
+
+
+
+.contacto-info{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.contacto-info img {
+  width: 28px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+footer{
+  background: #2f2f2f;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer img{
+  margin: 0 40px;
+  transform: rotate(0);
+  transition: 0.4s;
+}
+
+footer img:hover{
+  transform: rotate(360deg);
+  transition: 0.4s;
+}
+
+footer p
+{
+  color: #fff;
+  margin-top: 40px;
+}
+
+#whatsapp{
+  position: fixed;/* fijar un objeto en la pantalla*/
+  top: 80%;
+  right: 1%;
+}
+
+
+
+/**/
+
+html{
+  scroll-behavior: smooth;
+}
+#sobre-code, #funciones, #tiendas, #blog , #contacto, #por-que-usar
+{
+  padding: 5px 0;
+}
+.menu-icon
+{
+display: none;
+}
+@media (max-width: 800px) {
+
+  .menu-icon
+  {
+  display:block;
+  float: right;
+  width: 40px;
+  height: 35px;
+  margin-top: 15px;
+  }
+
+  header nav{
+    position: absolute;
+    top:83px;
+    right: 0;
+    height: 260px;
+    background: #ff8533;
+    display: none;
+  }
+  header nav ul{
+  flex-direction: column;
+  }
+
+  header nav ul li{
+    margin-bottom: 15px;
+  }
+  h1{
+    font-size: 44px;
+  }
+  h2{
+    font-size: 19px;
+  }
+  #contenedor-titulo-flex{
+    width: 100%;
+  }
+  #sobre-code .contenedor-sobrecode {
+  flex-direction: column;
+}
+#sobre-code .texto {
+    width: 100%;
+}
+#sobre-code a{
+  display: block;
+  text-align: center;
+
+}
+.principal{
+width: 100%;
+}
+.contenedor-funciones {
+    flex-direction: column;
+}
+.funcion {
+    width: 79%;
+    margin-bottom: 40px;
+}
+.item{
+  height: 150px;
+  width: 150px;
+}
+.contenedor-usar {
+flex-direction: column;
+}
+#por-que-usar .item2 {
+    width: 92%;
+}
+
+element.style {
+    margin-left: 10px;
+}
+.owl-theme .owl-nav {
+    margin-top: -123px;
+}
+#blog .contenedor-publicaciones {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+#blog .publicacion {
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+#contacto form {
+    flex-direction: column;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+.contacto-info {
+    flex-direction: column;
+}
+.contacto-info img {
+    margin-bottom: 10px;
+}
+.ondas {
+    width: 326px;
+}
+footer {
+    padding: 8px 0;
+    margin-top: 8px;
+}
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  h1 {
+      font-size: 83px;
+  }
+  h2 {
+    font-size: 36px;
+}
+.contenedor-titulo a{
+  font-size: 24px;
+}
+p.logo {
+    font-size: 30px;
+}
+.menu-icon {
+    width: 95px;
+    height: 74px;
+    margin-top: 19px;
+}
+header nav {
+    height: 328px;
+    width: 363px;
+}
+header nav ul li {
+    margin-bottom: 29px;
+}
+.funcion {
+    width: 91%;
+}
+.ondas {
+    height: 515px;
+    width: 689px;
+}
+.owl-carousel {
+    width: 89%;
+}
+#sobre-code .texto {
+    font-size: 25px;
+}
+#sobre-code a {
+    font-size: 31px;
+}
+.contenedor-funciones {
+    font-size: 31px;
+}
+.funcion {
+    padding-bottom: 193px;
+}
+#por-que-usar ul li, #por-que-usar ul li:nth-child(2) {
+    font-size: 27px;
+}
+#blog h4 {
+    font-size: 42px;
+}
+#blog p {
+    line-height: 41px;
+    font-size: 32px;
+}
+#blog a{
+  font-size: 30px;
+}
+#que-esperas h3 {
+    font-size: 33px;
+}
+#que-esperas a{
+  font-size: 23px;
+}
+input[type="text"], input[type="email"] {
+    font-size: 21px;
+}
+textarea {
+    font-size: 24px;
+}
+#contacto input[type="submit"] {
+    font-size: 18px;
+}
+.contacto-info {
+    font-size: 24px;
+}

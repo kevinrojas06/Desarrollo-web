@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul{
+  display:flex;
+}
+
+ul li{
+  list-style: none;
+  margin-right: 35px;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.logo{
+  color: #fff;
+  margin: 17px 10px 10px 30px;
+}
+
+
+
+.menu {
+  background:
+  linear-gradient(rgba(240, 122, 84, 0.9),
+  rgba(240, 178, 84, 0.9)),
+  url(../img/fondo.jpg);
+
+  background-size: cover;
+}
+
+.tiendas{
+  margin: 0;
+  padding: 0;
+  width: 750px;
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 200px;
+  margin-bottom: 0;
+  background: linear-gradient(rgba(255, 179, 179, 0.9),
+  rgba(255, 153, 153, 0.9));
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  border-radius: 60px;
+
+}
+img:hover
+{
+  transform: rotate(360deg);
+  transition: 0.4s;
+}
+img{
+  display: flex;
+  border-radius: 100px;
+  width: 180px;
+}

@@ -1,0 +1,57 @@
+body{
+  background: linear-gradient(to right, rgba(255,255,255,0.40) 48%,rgba(255,255,255,0.40) 63%,rgba(255,255,255,0.40) 98%,rgba(255,255,255,0.40) 100%),
+  url(../img/play1.jpg);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
+
+.contenido{
+display:flex;
+justify-content:flex-start;
+list-style: none;
+margin-top: 50px;
+}
+
+ul li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+.desc{
+background:linear-gradient(rgba(26, 26, 255, 0.6),
+rgba(0, 0, 255, 0.6));
+border-radius: 10px;
+padding: 10px 500px 10px 10px;
+margin: -17px 50px 60px 60px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  background:linear-gradient(rgba(26, 26, 255, 0.6),
+  rgba(0, 0, 255, 0.6));
+
+}
+.lista-menu{
+  display: flex;
+
+}
+.m{
+  margin: 10px 30px 10px 10px;
+}
+.logo{
+  margin: 30px 10px 10px 30px;
+}
+.contenedor{
+  background:linear-gradient(rgba(26, 26, 255, 0.6),
+  rgba(0, 0, 255, 0.6));
+  padding: 10px 40px 10px 0px;
+  border-radius: 10px;
+  height: 600px;
+}
